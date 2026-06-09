@@ -1,0 +1,77 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.bio p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.bio strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.bio em {
+  color: var(--accent-cyan);
+  font-style: normal;
+}
+
+.traits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.trait {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.trait:hover {
+  border-color: rgba(79, 110, 247, 0.35);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.traitIcon {
+  color: var(--accent-blue);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.traitTitle {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.traitDesc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
