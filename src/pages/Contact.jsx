@@ -49,26 +49,19 @@ const Contact = () => {
                 <p>Siempre estoy abierto a nuevas oportunidades, proyectos interesantes y colaboraciones. No dudes en contactarme si quieres conversar sobre algo.</p>
                 
                 <div className={styles.details}>
-                <div className={styles.detail}>
-                    <span className={styles.label}>Email:</span>
-                    <a href="mailto:lunaemilio2003@gmail.com" className={styles.link}>
-                    lunaemilio2003@gmail.com
-                    </a>
-                </div>
-                
-                <div className={styles.detail}>
-                    <span className={styles.label}>GitHub:</span>
-                    <a href="https://github.com/lumini-statio" className={styles.link} target="_blank" rel="noopener noreferrer">
-                    github.com/lumini-statio
-                    </a>
-                </div>
+                    <div className={styles.detail}>
+                        <span className={styles.label}>GitHub:</span>
+                        <a href="https://github.com/lumini-statio" className={styles.link} target="_blank" rel="noopener noreferrer">
+                        github.com/lumini-statio
+                        </a>
+                    </div>
 
-                <div className={styles.detail}>
-                    <span className={styles.label}>LinkedIn:</span>
-                    <a href="https://www.linkedin.com/in/emilio-luna-backend/" className={styles.link} target="_blank" rel="noopener noreferrer">
-                    emilio-luna-backend
-                    </a>
-                </div>
+                    <div className={styles.detail}>
+                        <span className={styles.label}>LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/emilio-luna-backend/" className={styles.link} target="_blank" rel="noopener noreferrer">
+                        emilio-luna-backend
+                        </a>
+                    </div>
                 </div>
             </div>
 
