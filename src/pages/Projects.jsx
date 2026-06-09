@@ -7,8 +7,27 @@ import styles from './styles/Projects.module.css';
 import { ArrowLeft } from 'lucide-react';
 
 const Projects = () => {
+    // Orden personalizado de categorías
+    const categoryOrder = [
+        'Backend',
+        'Full Stack',
+        'AI / ML',
+        'DevOps',
+        'Frontend',
+        'Desktop',
+        'Automation',
+        'CLI'
+    ];
+
     const categories = useMemo(() => {
-        return Array.from(new Set(projects.map(p => p.category))).sort();
+        const uniqueCategories = Array.from(new Set(projects.map(p => p.category)));
+        // Ordenar según el array categoryOrder, luego agregar categorías no especificadas al final
+        return uniqueCategories.sort((a, b) => {
+            const indexA = categoryOrder.indexOf(a);
+            const indexB = categoryOrder.indexOf(b);
+            // Si no está en el orden personalizado, ponerlo al final
+            return (indexA === -1 ? categoryOrder.length : indexA) - (indexB === -1 ? categoryOrder.length : indexB);
+        });
     }, []);
 
     return (

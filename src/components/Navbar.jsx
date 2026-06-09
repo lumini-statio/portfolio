@@ -6,10 +6,10 @@ import styles from './styles/Navbar.module.css';
 import { Menu, X } from 'lucide-react';
 
 const links = [
-  { href: '#about', label: 'About', isAnchor: true },
-  { href: '#stack', label: 'Stack', isAnchor: true },
+  { href: '/#about', label: 'About', isAnchor: true },
+  { href: '/#stack', label: 'Stack', isAnchor: true },
   { href: '/projects', label: 'Projects', isAnchor: false },
-  { href: '#contact', label: 'Contact', isAnchor: true },
+  { href: '/#contact', label: 'Contact', isAnchor: true },
 ];
 
 const Navbar = () => {
