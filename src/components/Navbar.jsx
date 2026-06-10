@@ -28,22 +28,22 @@ const Navbar = () => {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.nav}`}>
-        <Link to="/" className={styles.logo}>
+        <a to="/" className={styles.logo}>
           <span className={styles.logoAccent}>lumini</span>
           <span className={styles.logoDivider}>—</span>
           <span className={styles.logoSub}>statio</span>
-        </Link>
+        </a>
 
         <nav className={`${styles.links} ${open ? styles.mobileOpen : ''}`}>
           {links.map((l) => (
-            <Link 
+            <NavLink 
               key={l.href} 
-              to={l.href} 
+              href={l.href} 
               onClick={close}
               isActive={location.pathname === l.href}
             >
               {l.label}
-            </Link>
+            </NavLink>
           ))}
           <Button href="https://github.com/lumini-statio" variant="secondary">
             GitHub
