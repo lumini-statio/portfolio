@@ -131,4 +131,5 @@ export const stack = [
   { label: "Netty - SocketIO", group: "Tools" },
   { label: "Redis", group: "Tools" },
   { label: "RabbitMQ", group: "Tools" },
+  { label: "Linux", group: "Tools" }
 ];
