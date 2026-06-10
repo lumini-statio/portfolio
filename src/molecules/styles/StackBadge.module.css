@@ -30,14 +30,11 @@
 }
 
 /* group colors */
-.badge.backend .dot     { background: #4F6EF7; }
-.badge.backend:hover    { border-color: rgba(79,110,247,0.4); }
+.badge.principals .dot     { background: #f79b4f; }
+.badge.principals:hover    { border-color: rgba(255, 36, 36, 0.89); }
 
-.badge.frontend .dot    { background: #00D4FF; }
-.badge.frontend:hover   { border-color: rgba(0,212,255,0.4); }
+.badge.complementaries .dot    { background: #00D4FF; }
+.badge.complementaries:hover   { border-color: rgba(0, 213, 255, 0.884); }
 
-.badge.devops .dot      { background: #F7AC4F; }
-.badge.devops:hover     { border-color: rgba(247,172,79,0.4); }
-
-.badge.cloud .dot       { background: #F74F4F; }
-.badge.cloud:hover      { border-color: rgba(247,79,79,0.4); }
+.badge.tools .dot      { background: #4ff7a9ad; }
+.badge.tools:hover     { border-color: rgb(155, 247, 79); }

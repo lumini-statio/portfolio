@@ -67,7 +67,7 @@ img { max-width: 100%; display: block; }
 
 .section-label {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 1rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent-cyan);

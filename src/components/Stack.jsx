@@ -3,7 +3,7 @@ import StackBadge from '../molecules/StackBadge';
 import { stack } from '../../data/projects';
 import styles from './styles/Stack.module.css';
 
-const groups = ['Backend', 'Frontend', 'DevOps', 'Cloud'];
+const groups = ['Principals', 'Complementaries', 'Tools'];
 
 const Stack = () => (
   <section className={`section ${styles.stackSection}`} id="stack">

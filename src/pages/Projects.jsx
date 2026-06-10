@@ -10,9 +10,8 @@ const Projects = () => {
     // Orden personalizado de categorías
     const categoryOrder = [
         'Backend',
-        'Full Stack',
         'AI / ML',
-        'DevOps',
+        'Full Stack',
         'Frontend',
         'Desktop',
         'Automation',
@@ -55,7 +54,8 @@ const Projects = () => {
                         title={project.title}
                         description={project.description}
                         tags={project.tags}
-                        url={project.url}
+                        github={project.github}
+                        web={project.web}
                         category={project.category}
                         />
                     ))}

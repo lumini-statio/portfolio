@@ -25,9 +25,10 @@
   box-shadow: 0 0 20px rgba(79, 110, 247, 0.25);
 }
 
-.primary:hover:not(:disabled) {
+.primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 32px rgba(79, 110, 247, 0.45);
+  background: linear-gradient(135deg, var(--accent-blue), #7388ff);
+  color: #fff;
 }
 
 .secondary {
@@ -36,10 +37,10 @@
   border: 1px solid var(--border);
 }
 
-.secondary:hover:not(:disabled) {
+.secondary:hover {
   border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
-  box-shadow: 0 0 16px var(--accent-cyan-glow);
+  transform: translateY(-2px);
+  color: #fff;
 }
 
 .ghost {
@@ -50,7 +51,7 @@
   font-size: 13px;
 }
 
-.ghost:hover:not(:disabled) {
+.ghost:hover {
   background: rgba(0, 212, 255, 0.08);
   border-color: var(--accent-cyan);
 }

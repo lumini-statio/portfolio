@@ -6,7 +6,7 @@ import styles from './styles/Form.module.css';
 const Form = ({ 
     fields, 
     onSubmit, 
-    submitLabel = 'Enviar',
+    submitLabel = 'Send',
     serviceId,
     templateId,
     publicKey
@@ -32,7 +32,7 @@ const Form = ({
         e.preventDefault();
         
         if (!serviceId || !templateId || !publicKey) {
-            setMessage({ type: 'error', text: 'Configuración de EmailJS incompleta' });
+            setMessage({ type: 'error', text: 'Email service not properly configured' });
             return;
         }
 
@@ -41,12 +41,12 @@ const Form = ({
 
         try {
             await emailjs.send(serviceId, templateId, formData);
-            setMessage({ type: 'success', text: '¡Mensaje enviado exitosamente!' });
+            setMessage({ type: 'success', text: 'Message sent successfully!' });
             setFormData(fields.reduce((acc, field) => ({ ...acc, [field.id]: '' }), {}));
             if (onSubmit) onSubmit(formData);
         } catch (error) {
-            console.error('Error al enviar email:', error);
-            setMessage({ type: 'error', text: 'Error al enviar el mensaje. Por favor, intente de nuevo.' });
+            console.error('Error sending email:', error);
+            setMessage({ type: 'error', text: 'Error sending email. Please try again.' });
         } finally {
             setLoading(false);
         }
@@ -74,7 +74,7 @@ const Form = ({
                 className={styles.button}
                 disabled={loading}
             >
-                {loading ? 'Enviando...' : submitLabel}
+                {loading ? 'Sending...' : submitLabel}
             </button>
         </form>
     );

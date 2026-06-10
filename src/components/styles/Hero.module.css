@@ -52,7 +52,7 @@
 
 .eyebrow span {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 1rem;
   letter-spacing: 0.05em;
   color: var(--text-secondary);
   text-transform: uppercase;
@@ -61,7 +61,7 @@
 /* ─── Heading ────────────────────────────────────────────────── */
 .heading {
   font-family: var(--font-display);
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
   line-height: 1.2;
   color: var(--text-primary);
@@ -79,7 +79,7 @@
 
 /* ─── Role ───────────────────────────────────────────────────── */
 .role {
-  font-size: clamp(18px, 2.5vw, 24px);
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
   font-weight: 500;
   color: var(--text-secondary);
   margin-bottom: 16px;
@@ -93,7 +93,7 @@
 
 /* ─── Tagline ────────────────────────────────────────────────── */
 .tagline {
-  font-size: clamp(14px, 1.2vw, 16px);
+  font-size: clamp(1.2rem, 1.2vw, 1rem);
   color: var(--text-secondary);
   max-width: 500px;
   margin: 0 auto 48px;
@@ -186,7 +186,7 @@
   }
 
   .heading {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   .cta {

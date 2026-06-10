@@ -7,36 +7,36 @@ const Contact = () => {
     const contactFields = [
         {
         id: 'from_name',
-        label: 'Nombre',
+        label: 'Name',
         type: 'text',
         required: true,
-        placeholder: 'Tu nombre'
+        placeholder: 'Your name'
         },
         {
         id: 'from_email',
         label: 'Email',
         type: 'email',
         required: true,
-        placeholder: 'tu@email.com'
+        placeholder: 'your@email.com'
         },
         {
         id: 'subject',
-        label: 'Asunto',
+        label: 'Subject',
         type: 'text',
         required: true,
-        placeholder: 'Tema del mensaje'
+        placeholder: 'Message subject'
         },
         {
         id: 'message',
-        label: 'Mensaje',
+        label: 'Message',
         rows: 5,
         required: true,
-        placeholder: 'Tu mensaje aquí...'
+        placeholder: 'Your message here...'
         }
     ];
 
     const handleFormSubmit = (data) => {
-        console.log('Formulario enviado:', data);
+        console.log('Form submitted:', data);
     };
 
     return (
@@ -46,7 +46,7 @@ const Contact = () => {
             
             <div className={styles.content}>
             <div className={styles.info}>
-                <p>Siempre estoy abierto a nuevas oportunidades, proyectos interesantes y colaboraciones. No dudes en contactarme si quieres conversar sobre algo.</p>
+                <p>I'm always open to new opportunities, interesting projects, and collaborations. Feel free to contact me if you'd like to discuss anything.</p>
                 
                 <div className={styles.details}>
                     <div className={styles.detail}>
