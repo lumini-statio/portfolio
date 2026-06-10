@@ -129,8 +129,6 @@ export const stack = [
   { label: "React", group: "Complementaries" },
   { label: "Hibernate JPA / JDBC", group: "Tools" },
   { label: "Netty - SocketIO", group: "Tools" },
-  { label: "AWS S3", group: "Tools" },
-  { label: "AWS Lambda", group: "Tools" },
   { label: "Redis", group: "Tools" },
   { label: "RabbitMQ", group: "Tools" },
 ];
