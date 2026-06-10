@@ -1,6 +1,6 @@
 import SectionHeader from '../atoms/SectionHeader';
 import styles from './styles/About.module.css';
-import { Users, Zap, MessageSquare } from 'lucide-react';
+import { Users, Zap, MessageSquare, Award } from 'lucide-react';
 
 const traits = [
   {
@@ -17,6 +17,33 @@ const traits = [
     icon: <MessageSquare size={22} />,
     title: 'Clear Communicator',
     description: 'Skilled at translating technical complexity into plain language. I bridge the gap between engineering teams and non-technical stakeholders.',
+  },
+];
+
+const education = [
+  {
+    title: 'Software Technician Student',
+    institution: 'National Technical University',
+  },
+  {
+    title: 'Professional Kubernetes Certificate',
+    institution: 'National Technical University',
+  },
+  {
+    title: 'Python Diploma',
+    institution: 'National Technical University',
+  },
+  {
+    title: 'Professional Server Deployment Certificate',
+    institution: 'CodigoFacilito',
+  },
+  {
+    title: 'Professional Java Certificate',
+    institution: 'CodigoFacilito and TodoCodeAcademy',
+  },
+  {
+    title: 'Professional Relational Databases Certificate',
+    institution: 'TodoCodeAcademy',
   },
 ];
 
@@ -44,6 +71,23 @@ const About = () => (
               <div>
                 <h3 className={styles.traitTitle}>{t.title}</h3>
                 <p className={styles.traitDesc}>{t.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={styles.education}>
+        <h2 className={styles.educationTitle}>Education & Certifications</h2>
+        <div className={styles.educationList}>
+          {education.map((edu, index) => (
+            <div key={index} className={styles.educationItem}>
+              <div className={styles.educationIcon}>
+                <Award size={20} />
+              </div>
+              <div className={styles.educationContent}>
+                <h3 className={styles.educationItemTitle}>{edu.title}</h3>
+                <p className={styles.educationInstitution}>{edu.institution}</p>
               </div>
             </div>
           ))}

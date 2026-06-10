@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 64px;
   align-items: start;
+  margin-bottom: 64px;
 }
 
 .bio {
@@ -69,9 +70,79 @@
   line-height: 1.65;
 }
 
+/* Education Section */
+.education {
+  width: 100%;
+}
+
+.educationTitle {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.educationList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.educationItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.educationItem:hover {
+  border-color: rgba(79, 110, 247, 0.35);
+  box-shadow: 0 0 20px var(--accent-glow);
+  transform: translateY(-4px);
+}
+
+.educationIcon {
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.educationContent {
+  flex: 1;
+}
+
+.educationItemTitle {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.educationInstitution {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .educationTitle {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+  }
+
+  .educationList {
+    grid-template-columns: 1fr;
   }
 }
