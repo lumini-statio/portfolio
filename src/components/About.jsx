@@ -54,7 +54,7 @@ const About = () => (
       <div className={styles.grid}>
         <div className={styles.bio}>
           <p>
-            I'm <strong>Emilio Luna</strong>, a Backend Developer and Tech Leader working at the Airport Security Police. My day-to-day sits at the intersection of software engineering and high-stakes operations — where reliability isn't optional.
+            I'm <strong>Emilio Luna</strong>, a <strong>4 years of experience</strong> Backend Developer and Tech Leader working at the <strong>Airport Security Police</strong>. My day-to-day sits at the intersection of software engineering and high-stakes operations — where reliability isn't optional.
           </p>
           <p>
             I enjoy building projects that make a real difference for people: from AI-powered recognition systems to real-time communication tools and productivity apps. Whether I'm designing an API, architecting a container stack, or prototyping a desktop app, I bring the same mindset — <em>build it right, make it count</em>.
