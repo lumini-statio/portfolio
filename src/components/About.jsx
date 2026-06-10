@@ -23,15 +23,15 @@ const traits = [
 const education = [
   {
     title: 'Software Technician Student',
-    institution: 'National Technical University',
+    institution: 'National Technical University - Buenos Aires',
   },
   {
     title: 'Professional Kubernetes Certificate',
-    institution: 'National Technical University',
+    institution: 'National Technical University - Buenos Aires',
   },
   {
     title: 'Python Diploma',
-    institution: 'National Technical University',
+    institution: 'National Technical University - Buenos Aires',
   },
   {
     title: 'Professional Server Deployment Certificate',
