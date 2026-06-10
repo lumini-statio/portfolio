@@ -108,7 +108,7 @@ const Hero = () => {
         </p>
 
         <div className={styles.cta}>
-          <Button href="#projects" variant="primary">View Projects</Button>
+          <Button href="/projects" variant="primary">View Projects</Button>
           <Button href="https://www.linkedin.com/in/emilio-luna-backend/" variant="primary">
             <p/> LinkedIn
           </Button>
