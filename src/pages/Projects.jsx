@@ -36,7 +36,7 @@ const Projects = () => {
             <div className={styles.headingWrapper}>
                 <SectionHeader label="Portfolio" title="All Projects" />
             </div>
-            <Button href="/#hero" variant="secondary" className={styles.backButton}>
+            <Button href="/#hero" variant="primary" className={styles.backButton}>
                 <ArrowLeft size={16} /> Back to Home
             </Button>
             </div>
@@ -62,6 +62,9 @@ const Projects = () => {
                 </div>
                 </div>
             ))}
+            <Button href="/#hero" variant="primary" className={styles.backButton}>
+                <ArrowLeft size={16} /> Back to Home
+            </Button>
             </div>
         </div>
         </section>

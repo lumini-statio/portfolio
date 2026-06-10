@@ -97,14 +97,14 @@ export const projects = [
   },
   {
     id: 13,
-    title: "Contability System Backend",
+    title: "Contability Backend System",
     description: "The system I use I built for my work, which supports the entire accounting area and covers all its needs.",
     tags: ["Java", "Spring Boot", "Spring Security", "Hibernate", "JWT", "Kubernetes - K8s"],
     category: "Backend",
   },
   {
     id: 14,
-    title: "Sanity System Backend",
+    title: "Sanity Backend System",
     description: "System used by the health department to assign sick leave, track sick leave, conduct annual checkups, and perform physical and psychological checkups for new hires, etc.",
     tags: ["Java", "Spring Boot", "Spring Security", "Hibernate", "JWT", "Docker - Docker Compose"],
     category: "Backend",

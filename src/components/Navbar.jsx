@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import NavLink from '../atoms/NavLink';
 import Button from '../atoms/Button';
 import styles from './styles/Navbar.module.css';
@@ -28,22 +28,22 @@ const Navbar = () => {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.nav}`}>
-        <a href="/" className={styles.logo}>
+        <Link to="/" className={styles.logo}>
           <span className={styles.logoAccent}>lumini</span>
           <span className={styles.logoDivider}>—</span>
           <span className={styles.logoSub}>statio</span>
-        </a>
+        </Link>
 
         <nav className={`${styles.links} ${open ? styles.mobileOpen : ''}`}>
           {links.map((l) => (
-            <NavLink 
+            <Link 
               key={l.href} 
-              href={l.href} 
+              to={l.href} 
               onClick={close}
               isActive={location.pathname === l.href}
             >
               {l.label}
-            </NavLink>
+            </Link>
           ))}
           <Button href="https://github.com/lumini-statio" variant="secondary">
             GitHub
