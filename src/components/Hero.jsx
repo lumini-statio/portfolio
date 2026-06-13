@@ -116,10 +116,10 @@ const Hero = () => {
             <p/> GitHub
           </Button>
 
-          <Button href="/public/cv-en.pdf" variant='secondary' target="_blank">
+          <Button href="/cv-en.pdf" variant='secondary' target="_blank">
             CV-en
           </Button>
-          <Button href="/public/cv-es.pdf" variant='secondary' target="_blank">
+          <Button href="/cv-es.pdf" variant='secondary' target="_blank">
             CV-es
           </Button>
         </div>
