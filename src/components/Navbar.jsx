@@ -29,9 +29,9 @@ const Navbar = () => {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.nav}`}>
         <a to="/" className={styles.logo}>
-          <span className={styles.logoAccent}>EMILIO</span>
+          <span className={styles.logoAccent}>emilio</span>
           <span className={styles.logoDivider}>—</span>
-          <span className={styles.logoSub}>LUNA</span>
+          <span className={styles.logoSub}>luna</span>
         </a>
 
         <nav className={`${styles.links} ${open ? styles.mobileOpen : ''}`}>
