@@ -1,6 +1,6 @@
 import styles from './styles/Button.module.css';
 
-const Button = ({ children, href, onClick, variant = 'primary', type = 'button', disabled = false, className }) => {
+const Button = ({ children, href, onClick, variant = 'primary', type = 'button', disabled = false, className, target }) => {
   const cls = `${styles.btn} ${styles[variant]} ${className || ''}`;
   
   const isExternal = href && (href.startsWith('http') || href.startsWith('www'));
@@ -10,7 +10,8 @@ const Button = ({ children, href, onClick, variant = 'primary', type = 'button',
       <a 
         href={href} 
         className={cls}
-        {...(isExternal && { target: '_blank', rel: 'noopener noreferrer' })}
+        target={target || (isExternal ? '_blank' : undefined)}
+        rel={(target === '_blank' || isExternal) ? 'noopener noreferrer' : undefined}
       >
         {children}
       </a>

@@ -28,11 +28,16 @@ const Navbar = () => {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.nav}`}>
-        <a to="/" className={styles.logo}>
+        <NavLink
+          key={"/#hero"}
+          href="/#hero"
+          isActive={location.pathname === "/#hero"}
+          className={styles.logo}
+        >
           <span className={styles.logoAccent}>emilio</span>
           <span className={styles.logoDivider}>—</span>
           <span className={styles.logoSub}>luna</span>
-        </a>
+        </NavLink>
 
         <nav className={`${styles.links} ${open ? styles.mobileOpen : ''}`}>
           {links.map((l) => (

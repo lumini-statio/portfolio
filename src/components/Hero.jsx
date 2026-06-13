@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Button from '../atoms/Button';
 import styles from './styles/Hero.module.css';
 import { ChevronDown } from 'lucide-react';
@@ -36,10 +36,10 @@ function initCanvas(canvas) {
         const dy = dots[i].y - dots[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < CONNECT_DIST) {
-          const alpha = (1 - dist / CONNECT_DIST) * 0.25;
+          const alpha = (1 - dist / CONNECT_DIST) * 0.9;
           ctx.beginPath();
           ctx.strokeStyle = `rgba(79,110,247,${alpha})`;
-          ctx.lineWidth = 0.8;
+          ctx.lineWidth = 1;
           ctx.moveTo(dots[i].x, dots[i].y);
           ctx.lineTo(dots[j].x, dots[j].y);
           ctx.stroke();
@@ -114,6 +114,13 @@ const Hero = () => {
           </Button>
           <Button href="https://github.com/lumini-statio" variant="secondary">
             <p/> GitHub
+          </Button>
+
+          <Button href="/public/cv-en.pdf" variant='secondary' target="_blank">
+            CV-en
+          </Button>
+          <Button href="/public/cv-es.pdf" variant='secondary' target="_blank">
+            CV-es
           </Button>
         </div>
       </div>
