@@ -33,6 +33,7 @@
 
 .logoAccent {
   color: var(--accent-cyan);
+  font-size: 1.5rem;
 }
 
 .logoDivider {
@@ -42,6 +43,7 @@
 
 .logoSub {
   color: var(--text-primary);
+  font-size: 1.5rem;
 }
 
 .links {
