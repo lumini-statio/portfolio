@@ -66,7 +66,10 @@ const About = () => (
           <p>
             I enjoy building projects that make a real difference for people:
             from AI-powered recognition systems to real-time communication tools
-            and productivity apps. Whether I'm designing an API, architecting a
+            and productivity apps.
+          </p>
+          <p>         
+            Whether I'm designing an API, architecting a
             container stack, or prototyping a desktop app, I bring the same
             mindset: <em>build it right, make it count</em>.
           </p>
