@@ -10,7 +10,7 @@ const traitKeys = [
   { key: "communicator", icon: <MessageSquare size={22} /> },
 ];
 
-const educationKeys = ["tech", "k8s", "python", "server", "java", "db"];
+const educationKeys = ["tech", "k8s", "py", "deploy", "java", "db"];
 
 const About = () => {
   const { t } = useTranslation();
