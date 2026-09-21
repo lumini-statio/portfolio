@@ -4,6 +4,7 @@ import NavLink from '../atoms/NavLink';
 import Button from '../atoms/Button';
 import styles from './styles/Navbar.module.css';
 import { Menu, X } from 'lucide-react';
+import LanguageSwitcher from '../atoms/LanguageSwitcher';
 
 const links = [
   { href: '/#about', label: 'About', isAnchor: true },
@@ -28,16 +29,21 @@ const Navbar = () => {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.nav}`}>
-        <NavLink
-          key={"/#hero"}
-          href="/#hero"
-          isActive={location.pathname === "/#hero"}
-          className={styles.logo}
-        >
-          <span className={styles.logoAccent}>emilio</span>
-          <span className={styles.logoDivider}>—</span>
-          <span className={styles.logoSub}>luna</span>
-        </NavLink>
+        <div>
+
+          <NavLink
+            key={"/#hero"}
+            href="/#hero"
+            isActive={location.pathname === "/#hero"}
+            className={styles.logo}
+          >
+            <span className={styles.logoAccent}>emilio</span>
+            <span className={styles.logoDivider}>—</span>
+            <span className={styles.logoSub}>luna</span>
+          </NavLink>
+          <span>———&gt;</span>
+          <LanguageSwitcher/>
+        </div>
 
         <nav className={`${styles.links} ${open ? styles.mobileOpen : ''}`}>
           {links.map((l) => (

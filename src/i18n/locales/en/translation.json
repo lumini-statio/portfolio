@@ -1,0 +1,96 @@
+{
+    "home": {"projects": "Projects"},
+    "hero": {
+        "label": "Available for new opportunities",
+        "greetings": "Hi, I'm Emilio Luna",
+        "role": "Backend Developer with Tech Leader experience",
+        "description": {
+            "p1": "I like to build & participate on projects that help people.",
+            "p2": "I design & build apps I imagine."
+        }
+    },
+    "about": {
+        "label": "Quién Soy",
+        "title": "Sobre Mí",
+        "bio": {
+        "p1": "I'm <strong>Emilio Luna</strong>, a <strong>4 years of experience</strong> Backend Developer and Tech Leader working at the <strong>Airport Security Police</strong>. My day-to-day sits at the intersection of software engineering and high-stakes operations, where reliability isn't optional.",
+        "p2": "I enjoy building projects that make a real difference for people: from AI-powered recognition systems to real-time communication tools and productivity apps.",
+        "p3": "Whether I'm designing an API, architecting a container stack, or prototyping a desktop app, I bring the same mindset: <em>build it right, make it count</em>.",
+        "p4": "Outside work I keep experimenting: if I imagine something I could build, I build it."
+        },
+        "traits": {
+        "teamPlayer": {
+            "title": "Team Player",
+            "description": "I thrive in collaborative environments, contributing ideas, supporting teammates, and delivering better outcomes together than alone."
+        },
+        "selfDriven": {
+            "title": "Self-Driven",
+            "description": "Equally effective working autonomously. I own my tasks end-to-end, keep myself accountable, and get things done without constant supervision."
+        },
+        "communicator": {
+            "title": "Clear Communicator",
+            "description": "Skilled at translating technical complexity into plain language. I bridge the gap between engineering teams and non-technical stakeholders."
+        }
+        },
+        "educationTitle": "Education & Certificates",
+        "education": {
+            "tech": {
+                "title": "Software Technician Student",
+                "institution": "National Technical University - Buenos Aires, Argentina"
+            },
+            "k8s": {
+                "title": "Professional Kubernetes Certificate",
+                "institution": "National Technical University - Buenos Aires, Argentina"
+            },
+            "py": {
+                "title": "Python Diploma",
+                "institution": "National Technical University - Buenos Aires, Argentina"
+            },
+            "deploy": {
+                "title": "Professional Server Deployment Certificate",
+                "institution": "CodigoFacilito"
+            },
+            "java": {
+                "title": "Professional Java Certificate",
+                "institution": "CodigoFacilito & TodoCodeAcademy"
+            },
+            "db": {
+                "title": "Relational Databases Certificate",
+                "institution": "TodoCodeAcademy"
+            }
+        }
+    },
+    "stack": {
+        "label": "Technologies",
+        "title": "My Stack",
+        "divisions": {
+            "principals": "Principals",
+            "complementaries": "Complementaries",
+            "tools": "Tools"
+        }
+    },
+    "form": {
+        "send": "send",
+        "from_name": {
+            "label": "Name",
+            "placeholder": "Your name"
+        },
+        "from_email": {
+            "label": "Email",
+            "placeholder": "your@email.com"
+        },
+        "subject": {
+            "label": "Subject",
+            "placeholder": "Message subject"
+        },
+        "message": {
+            "label": "Message",
+            "placeholder": "Your message here..."
+        },
+        "contact": {
+            "label": "Get in Touch",
+            "title": "Contact Me",
+            "intro": "I'm always open to new opportunities, interesting projects, and collaborations. Feel free to contact me if you'd like to discuss anything."
+        }
+    }
+}

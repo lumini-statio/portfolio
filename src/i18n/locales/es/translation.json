@@ -1,0 +1,90 @@
+{
+  "home": {"projects": "Projectos"},
+  "hero": {
+    "label": "Disponible para nuevas oportunidades",
+    "greetings": "Hola, soy Emilio Luna",
+    "role": "Desarrollador Backend con experiencia en Liderazgo Técnico",
+    "description": {
+      "p1": "Me gusta construír y participar en proyectos que ayuden a la gente.",
+      "p2": "Diseño y construyo aplicaciones que imagino."
+    }
+  },
+  "about": {
+    "label": "Quién Soy",
+    "title": "Sobre Mí",
+    "bio": {
+      "p1": "Soy <strong>Emilio Luna</strong>, un Backend Developer y Tech Leader con <strong>4 años de experiencia</strong> trabajando en la <strong>Policía de Seguridad Aeroportuaria</strong>. Mi día a día está en la intersección entre ingeniería de software y operaciones de alto riesgo, donde la confiabilidad no es opcional.",
+      "p2": "Disfruto construyendo proyectos que generan un impacto real: desde sistemas de reconocimiento con IA hasta herramientas de comunicación en tiempo real y apps de productividad.",
+      "p3": "Ya sea diseñando una API, arquitecturando un stack de contenedores o prototipando una app de escritorio, mantengo la misma mentalidad: hacerlo bien, hacer que cuente.",
+      "p4": "Fuera del trabajo sigo experimentando: si imagino algo que podría construir, lo construyo."
+    },
+    "traits": {
+      "teamPlayer": {
+        "title": "Trabajo en Equipo",
+        "description": "Prospero en entornos colaborativos, aportando ideas, apoyando a mis compañeros y logrando mejores resultados en conjunto que en solitario."
+      },
+      "selfDriven": {
+        "title": "Autogestionado",
+        "description": "Igual de efectivo trabajando de forma autónoma. Soy dueño de mis tareas de principio a fin, sin necesidad de supervisión constante."
+      },
+      "communicator": {
+        "title": "Comunicador Claro",
+        "description": "Hábil traduciendo complejidad técnica a lenguaje simple. Soy el puente entre equipos de ingeniería y stakeholders no técnicos."
+      }
+    },
+    "educationTitle": "Educación y Certificaciones",
+    "education": {
+      "tech": { "title": "Estudiante de Técnico en Software", "institution": "Universidad Tecnológica Nacional - Buenos Aires, Argentina" },
+      "k8s": { "title": "Certificado Profesional de Kubernetes", "institution": "Universidad Tecnológica Nacional - Buenos Aires, Argentina" },
+      "py": {
+        "title": "Diploma en Python",
+        "institution": "Universidad Técnica Nacional - Buenos Aires, Argentina"
+      },
+      "deploy": {
+        "title": "Certificado Profesional en Implementación de Servidores",
+        "institution": "CodigoFacilito"
+      },
+      "java": {
+        "title": "Certificado Profesional en Java",
+        "institution": "CodigoFacilito & TodoCodeAcademy"
+      },
+      "db": {
+        "title": "Certificado en Bases de Datos Relacionales",
+        "institution": "TodoCodeAcademy"
+      }
+    }
+  },
+  "stack": {
+    "label": "Tecnologías",
+    "title": "Mi Stack",
+    "divisions": {
+      "principals": "Principales",
+      "complementaries": "Complementarios",
+      "tools": "Herramientas"
+    }
+  },
+  "form": {
+    "send": "enviar",
+    "from_name": {
+            "label": "Nombre",
+            "placeholder": "Tu Nombre"
+        },
+        "from_email": {
+            "label": "Email",
+            "placeholder": "tu@email.com"
+        },
+        "subject": {
+            "label": "Título",
+            "placeholder": "Título del Mensaje"
+        },
+        "message": {
+            "label": "Mensaje",
+            "placeholder": "Tu mensaje..."
+        },
+        "contact": {
+            "label": "Ponte en contacto",
+            "title": "Contactame",
+            "intro": "Siempre estoy abierto a nuevas oportunidades, proyectos interesantes y colaboraciones. Sientete libre de contactarme si quieres hablar."
+        }
+  }
+}

@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import Button from '../atoms/Button';
 import styles from './styles/Hero.module.css';
 import { ChevronDown } from 'lucide-react';
+import { useTranslation, Trans } from "react-i18next";
 
 /* ── Constellation animation ── */
 function initCanvas(canvas) {
@@ -76,6 +77,7 @@ function initCanvas(canvas) {
 
 const Hero = () => {
   const canvasRef = useRef(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (canvasRef.current) return initCanvas(canvasRef.current);
@@ -88,23 +90,21 @@ const Hero = () => {
       <div className={`container ${styles.content}`}>
         <div className={styles.eyebrow}>
           <span className={styles.dot} />
-          <span>Available for new opportunities</span>
+          <span><Trans i18nKey="hero.label" /></span>
         </div>
 
         <h1 className={styles.heading}>
-          Hi, I'm{' '}
-          <span className={styles.name}>Emilio Luna</span>
+          <Trans i18nKey="hero.greetings" />
         </h1>
 
         <p className={styles.role}>
-          Backend Developer &amp;{' '}
-          <span className={styles.roleAccent}>Tech Leader</span>{' '}
-          at Airport Security Police
+          <Trans i18nKey="hero.role" />
         </p>
 
         <p className={styles.tagline}>
-          I like to build &amp; participate on projects that help people.<br />
-          I design &amp; build apps I imagine.
+          <Trans i18nKey="hero.description.p1" />
+          <br />
+          <Trans i18nKey="hero.description.p2" />
         </p>
 
         <div className={styles.cta}>
