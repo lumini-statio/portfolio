@@ -42,11 +42,11 @@
                 "title": "Professional Kubernetes Certificate",
                 "institution": "National Technical University - Buenos Aires, Argentina"
             },
-            "py": {
+            "python": {
                 "title": "Python Diploma",
                 "institution": "National Technical University - Buenos Aires, Argentina"
             },
-            "deploy": {
+            "server": {
                 "title": "Professional Server Deployment Certificate",
                 "institution": "CodigoFacilito"
             },

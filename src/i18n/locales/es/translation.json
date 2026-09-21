@@ -36,11 +36,11 @@
     "education": {
       "tech": { "title": "Estudiante de Técnico en Software", "institution": "Universidad Tecnológica Nacional - Buenos Aires, Argentina" },
       "k8s": { "title": "Certificado Profesional de Kubernetes", "institution": "Universidad Tecnológica Nacional - Buenos Aires, Argentina" },
-      "py": {
+      "python": {
         "title": "Diploma en Python",
         "institution": "Universidad Técnica Nacional - Buenos Aires, Argentina"
       },
-      "deploy": {
+      "server": {
         "title": "Certificado Profesional en Implementación de Servidores",
         "institution": "CodigoFacilito"
       },
