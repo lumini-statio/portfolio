@@ -1,49 +1,52 @@
-import SectionHeader from '../atoms/SectionHeader';
-import styles from './styles/About.module.css';
-import { Users, Zap, MessageSquare, Award } from 'lucide-react';
+import SectionHeader from "../atoms/SectionHeader";
+import styles from "./styles/About.module.css";
+import { Users, Zap, MessageSquare, Award } from "lucide-react";
 
 const traits = [
   {
     icon: <Users size={22} />,
-    title: 'Team Player',
-    description: 'I thrive in collaborative environments — contributing ideas, supporting teammates, and delivering better outcomes together than alone.',
+    title: "Team Player",
+    description:
+      "I thrive in collaborative environments, contributing ideas, supporting teammates, and delivering better outcomes together than alone.",
   },
   {
     icon: <Zap size={22} />,
-    title: 'Self-Driven',
-    description: 'Equally effective working autonomously. I own my tasks end-to-end, keep myself accountable, and get things done without constant supervision.',
+    title: "Self-Driven",
+    description:
+      "Equally effective working autonomously. I own my tasks end-to-end, keep myself accountable, and get things done without constant supervision.",
   },
   {
     icon: <MessageSquare size={22} />,
-    title: 'Clear Communicator',
-    description: 'Skilled at translating technical complexity into plain language. I bridge the gap between engineering teams and non-technical stakeholders.',
+    title: "Clear Communicator",
+    description:
+      "Skilled at translating technical complexity into plain language. I bridge the gap between engineering teams and non-technical stakeholders.",
   },
 ];
 
 const education = [
   {
-    title: 'Software Technician Student',
-    institution: 'National Technical University - Buenos Aires',
+    title: "Software Technician Student",
+    institution: "National Technical University - Buenos Aires, Argentina",
   },
   {
-    title: 'Professional Kubernetes Certificate',
-    institution: 'National Technical University - Buenos Aires',
+    title: "Professional Kubernetes Certificate",
+    institution: "National Technical University - Buenos Aires, Argentina",
   },
   {
-    title: 'Python Diploma',
-    institution: 'National Technical University - Buenos Aires',
+    title: "Python Diploma",
+    institution: "National Technical University - Buenos Aires, Argentina",
   },
   {
-    title: 'Professional Server Deployment Certificate',
-    institution: 'CodigoFacilito',
+    title: "Professional Server Deployment Certificate",
+    institution: "CodigoFacilito",
   },
   {
-    title: 'Professional Java Certificate',
-    institution: 'CodigoFacilito and TodoCodeAcademy',
+    title: "Professional Java Certificate",
+    institution: "CodigoFacilito & TodoCodeAcademy",
   },
   {
-    title: 'Professional Relational Databases Certificate',
-    institution: 'TodoCodeAcademy',
+    title: "Relational Databases Certificate",
+    institution: "TodoCodeAcademy",
   },
 ];
 
@@ -54,13 +57,22 @@ const About = () => (
       <div className={styles.grid}>
         <div className={styles.bio}>
           <p>
-            I'm <strong>Emilio Luna</strong>, a <strong>4 years of experience</strong> Backend Developer and Tech Leader working at the <strong>Airport Security Police</strong>. My day-to-day sits at the intersection of software engineering and high-stakes operations — where reliability isn't optional.
+            I'm <strong>Emilio Luna</strong>, a{" "}
+            <strong>4 years of experience</strong> Backend Developer and Tech
+            Leader working at the <strong>Airport Security Police</strong>. My
+            day-to-day sits at the intersection of software engineering and
+            high-stakes operations, where reliability isn't optional.
           </p>
           <p>
-            I enjoy building projects that make a real difference for people: from AI-powered recognition systems to real-time communication tools and productivity apps. Whether I'm designing an API, architecting a container stack, or prototyping a desktop app, I bring the same mindset — <em>build it right, make it count</em>.
+            I enjoy building projects that make a real difference for people:
+            from AI-powered recognition systems to real-time communication tools
+            and productivity apps. Whether I'm designing an API, architecting a
+            container stack, or prototyping a desktop app, I bring the same
+            mindset: <em>build it right, make it count</em>.
           </p>
           <p>
-            Outside work I keep experimenting: if I imagine something I could build, I build it.
+            Outside work I keep experimenting: if I imagine something I could
+            build, I build it.
           </p>
         </div>
 
